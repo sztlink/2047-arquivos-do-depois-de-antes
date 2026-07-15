@@ -5,6 +5,15 @@
 .DS_Store
 Thumbs.db
 
+# Segredo do operador do Portal 2047 (host-local, NUNCA commitar)
+OPERATOR_TOKEN.local.txt
+**/OPERATOR_TOKEN.local.txt
+
+# Private working clones and labs nested here for convenience (never public)
+06-prototypes/atelie-*/
+06-prototypes/generative-loop/
+06-prototypes/image-lab/
+
 # Private material never meant for this repo
 private/
 internal/
