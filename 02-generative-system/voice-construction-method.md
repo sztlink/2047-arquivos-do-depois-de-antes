@@ -17,10 +17,12 @@ The novel is written in a voice built from the co-author's own prose, with her e
 
 The memory-inverted voice won: the novel is narrated from later inside 2047, the present told as remembrance.
 
-Punctuation emerged as the sharpest calibration dial. Current contract, derived from the co-author's own lapidation pass:
+Punctuation emerged as the sharpest calibration dial. Current contract, given by the co-author as written substitution recipes anchored on the page:
 
-- The colon survives only as a short thrust that flips a sentence on itself. It is banned as an introducer of explanations, lists, or appositions. Practical ceiling: one or two per chapter.
-- No semicolons.
+- No colons. Her recipe: replace the colon with a period and open the next sentence with a capital letter. This holds even for the short paradox form; its energy is carried by two dry sentences instead.
+- No semicolons. Her recipe converts them to commas, preserving the long-breath chaining of the sentence rather than cutting it.
 - No em dashes, no dialogue dashes. Speech is folded into the narration and punctuated with commas and periods.
 
-The lesson generalizes: a synthetic voice is not settled by adjectives ("literary", "essayistic") but by small enforceable behaviors that a human author actually marked on the page.
+An instructive detail of the process: after her first pass we inferred a subtler rule (the paradox colon survives) from what she had left untouched. Her second pass marked exactly that character with the general recipe. Lesson twice over: harvest the author's marks, and do not crystallize a fine rule while the author is still mid-pass.
+
+The larger lesson stands: a synthetic voice is not settled by adjectives ("literary", "essayistic") but by small enforceable behaviors that a human author actually marked on the page.
