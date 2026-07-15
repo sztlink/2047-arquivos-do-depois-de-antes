@@ -2,18 +2,18 @@
 
 This roadmap organizes the public research archive for **Projeto 2047 / Arquivo Terra Viva**.
 
-The project is no longer only an apparatus that prints AI output. It is a long-duration writing machine: a system that reads present signals, writes short stories from 2047, calibrates their sonic cadence through szt.link, performs them through a dot-matrix printer, and accumulates paper as a living archive.
+The project is no longer only an apparatus that prints AI output. It is a long-duration writing machine: a system that reads present signals, writes a continuous novel set in 2047 in chapters, calibrates their sonic cadence through szt.link, performs them through a dot-matrix printer, and accumulates paper as a living archive.
 
 This file is a public roadmap. It does not expose private production material, institutional documents, budgets, or closed co-authorial process.
 
 ## Current target
 
-Move the repository from **v0.1.0 initial public research archive** toward **v0.2.0: generative loop and controller proof**.
+Move the repository from **v0.2.0 (portal live, voice settled)** toward **v0.3.0: generative loop and controller proof**.
 
 The next public milestone should demonstrate the logic of:
 
 ```txt
-source -> short story -> sonic score -> print simulation -> ledger record
+source -> chapter -> sonic score -> print simulation -> ledger record
 ```
 
 before depending on the physical FX-2190.

@@ -14,7 +14,11 @@ Not an official institutional repository.
 Not an exhibition announcement.  
 Not a production dossier.
 
-Live command center prototype:
+Live portal (the machine's public surfaces, in production since July 2026):
+
+- <https://2047.szt.link>
+
+Live command center prototype (historical, May 2026):
 
 - <https://sztlink.github.io/2047-terra-viva-archive/06-prototypes/command-center/>
 
@@ -66,6 +70,9 @@ It reveals the present being mined.
 02-generative-system/
   pipeline.md
   source-curation-panel.md
+  curation-autonomy-ladder.md
+  continuous-novel.md
+  voice-construction-method.md
   memory-and-state.md
   dramaturgical-constraints.md
   sonic-cadence-and-score.md
@@ -83,6 +90,7 @@ It reveals the present being mined.
   2026-05-initial-development.md
   2026-05-command-center-smoke.md
   2026-05-story-packet-smoke.md
+  2026-07-portal-live-and-voice-settling.md
 
 04-archive-policy/
   public-private-layers.md

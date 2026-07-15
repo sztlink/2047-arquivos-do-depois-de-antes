@@ -4,6 +4,27 @@ All notable public changes to this research archive will be documented here.
 
 This repository follows semantic-ish research archive versions: `vMAJOR.MINOR.PATCH`, where minor versions may mark new public research blocks rather than software features.
 
+## [v0.2.0] - 2026-07-14
+
+The portal is live and the voice settles.
+
+### Added
+
+- Field note:
+  - `03-field-notes/2026-07-portal-live-and-voice-settling.md`
+- Generative system notes:
+  - `02-generative-system/continuous-novel.md` (from fragments to one continuous novel set in 2047; cast, arc, news as pressure)
+  - `02-generative-system/voice-construction-method.md` (the empirical voice loop: corpus with clearance, dosage versions, co-authorial lapidation, settled voice contract)
+  - `02-generative-system/curation-autonomy-ladder.md` (living curation, evidence computed live, autonomy earned, measured, and revocable)
+- Printer research:
+  - `01-apparatus/printer-research/scout-references-2026-06.md` (scouted references on continuous printing and reactivated technical chains)
+
+### Changed
+
+- README: live portal link (<https://2047.szt.link>); repository map updated.
+- EPICS: the machine writes a continuous novel in chapters, not short stories; current target moved to v0.3.0 (generative loop and controller proof).
+- `.gitignore`: hardened against local secrets and nested private working clones.
+
 ## [v0.1.0] - 2026-05-17
 
 Initial public research archive.
