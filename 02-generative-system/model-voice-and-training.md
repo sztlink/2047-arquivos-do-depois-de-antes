@@ -156,3 +156,11 @@ The model is not the artwork.
 The model is one instrument in the apparatus.
 The book emerges from model, source, score, printer, paper, silence, and human calibration.
 ```
+
+## Realized path, August 2026 (v0.3.0)
+
+The strategy this file sketched has a first realization. A situated writing instrument now exists: a local base model shaped by a lightweight adapter for the work's voice, served on a host the work controls, called by the controller with reasoning disabled for a clean single pass.
+
+Two points from this file held. The instrument is not a generic art-tech model, and a compact curated dataset beat the fantasy of scale, the training set being small, in the low hundreds of examples.
+
+One point needs an honest correction. This file and `corpus-policy.md` warn against raw model output as a training target. The working adapter's corpus is dominantly curated synthetic chapters, generated under the voice contract and then filtered, anchored by the seven co-authored seed chapters. These are not raw assistant conversations. They are candidate chapters in the target form, selected by evaluation. Whether that distinction is enough to sit inside the published corpus policy is a co-authorial decision, recorded as open. The rights and authorship boundary stated above is unchanged. The weights stay private, and no clearance question is settled by the existence of a working research artifact.

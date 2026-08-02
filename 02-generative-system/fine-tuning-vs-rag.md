@@ -447,3 +447,16 @@ Use the ledger for operational memory.
 Use the controller for state and accountability.
 Use human calibration for authorship and limits.
 ```
+
+## Resolution, August 2026 (v0.3.0)
+
+The comparison prescribed above was run. See `../03-field-notes/2026-08-voice-trained-and-deployed.md`. The outcome confirmed the hybrid position rather than overturning it.
+
+- A base model with prompt-only instruction drifts toward generic literary style, the failure this note predicted.
+- A lightweight adapter (LoRA) trained for form and cadence carries the voice reliably, and the punctuation contract survives in the raw output before any deterministic pass.
+
+The adapter was adopted for behavior and form only, consistent with the good fine-tuning target above. No facts, sources, news, or state live inside the weights. Those remain the job of retrieval and the ledger.
+
+One simplification is worth recording. The deployed motor does not ask the model for the structured self-scored packet sketched under Model output contract. It generates prose, and a deterministic filter enforces the punctuation contract after generation. The structured score and refusal packet stays a design reserve. The working apparatus is leaner than the first drawing.
+
+The corpus the adapter learned from is addressed in the field note and remains subject to the open question in `corpus-policy.md` about curated synthetic material.

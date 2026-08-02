@@ -4,6 +4,30 @@ All notable public changes to this research archive will be documented here.
 
 This repository follows semantic-ish research archive versions: `vMAJOR.MINOR.PATCH`, where minor versions may mark new public research blocks rather than software features.
 
+## [v0.3.0] - 2026-08-02
+
+The voice is trained and the machine runs on its own host.
+
+### Added
+
+- Field note:
+  - `03-field-notes/2026-08-voice-trained-and-deployed.md` (the model comparison the architecture prescribed, the voice adapter, deployment on the dedicated host, the complete apparatus running end to end, resilience after a real failure)
+
+### Changed
+
+- `02-generative-system/fine-tuning-vs-rag.md`: added the resolution of the prescribed comparison (a lightweight adapter adopted for form and cadence; the deployed pipeline is leaner than the structured-packet sketch).
+- `02-generative-system/model-voice-and-training.md`: added the realized path and an honest correction on corpus composition.
+- `02-generative-system/corpus-policy.md`: drafted Layer 7 (curated synthetic fictional material), a provisional category distinct from raw LLM output, with a cleared-origin condition and documented selection; updated the material-type table and the working position.
+- README: status updated for the trained voice and the dedicated host.
+
+### Open
+
+- Layer 7 (curated synthetic fictional material) is declared provisional and awaits co-authorial ratification, since the working adapter's corpus is dominantly curated synthetic material anchored by co-authored seeds. The category names the reconciliation rather than closing it.
+
+### Public boundary
+
+- The novel's text, the adapter weights, live infrastructure details, and internal hardening specifics remain outside this repository.
+
 ## [v0.2.0] - 2026-07-14
 
 The portal is live and the voice settles.
