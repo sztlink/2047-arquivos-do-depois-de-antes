@@ -34,4 +34,6 @@ Raw source URLs cannot go on paper. A survey of 464 accepted source URLs from th
 
 Every chapter code therefore encodes a short fixed-length redirect under the public archive domain, one path per chapter. The payload is always about 27 characters, the code is always version 3, 37x37 modules, printed at 16x13mm. Uniform on every chapter, printable at the needle floor.
 
+Chapter numbers in the redirect are padded to four digits. The padding is not cosmetic. At three digits the payload is 26 characters, which is exactly the ceiling of version 2, so the code would print at version 2 until chapter 999 and jump to version 3 at chapter 1000. A run at the slow cadence passes that mark, so the jump would land in the middle of the exhibition and split the printed archive into two code geometries. Four digits fix every code in the run at version 3.
+
 The redirect adds what the raw link cannot hold. The intermediate page carries provenance, the article title, the outlet, the date, the original URL. When the source article rots offline, the redirect keeps pointing at the archived record. The paper never points at a void.

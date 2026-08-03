@@ -12,6 +12,7 @@ The measured presets behind these tools are documented in `01-apparatus/escp-pri
 | `data_collage.py` | the data register, a seeded multi-source collage with typographic overlay |
 | `title_lockup.py` | FIGlet titles with optimal word splitting, and the native-type cover lockup |
 | `escp_qr.py` | QR codes in `ESC L` bit-image mode down to the 2x1 dot module |
+| `compositor.py` | a whole chapter composed for print, header and body in one continuous flow |
 
 ## Dependencies
 
@@ -31,3 +32,5 @@ All payloads open with the ART preamble. Reset, condensed 17.1 cpi, 8 lines per 
 2. A title that exceeds the page width splits at the best word boundary, two lines, three when needed, and never cuts a glyph.
 3. QR payloads are short fixed-length redirects, never raw source URLs.
 4. Verdicts about print quality come from paper. Screen previews of dot-matrix output mislead in both directions.
+5. A chapter is one continuous object. Header and body share the same form, and the only form feed comes after the colophon. An earlier draft gave the header a form of its own and wasted two thirds of a sheet per chapter.
+6. Chapter numbers are padded to four digits. The redirect payload stays at 27 characters and every code in the run is version 3. Three digits would start the run at version 2 and jump to version 3 at chapter 1000, mid exhibition.
