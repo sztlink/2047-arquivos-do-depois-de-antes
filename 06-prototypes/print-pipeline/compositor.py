@@ -28,7 +28,7 @@ Uso
   compositor.py corpo.txt --numero 0013 --qr https://heretica.xyz/f/0013 \
                 --fonte "..." --out payload.bin
 """
-import argparse, datetime, textwrap
+import argparse, datetime, json, os, textwrap
 
 import escp_common as ep
 from escp_qr import matrix, qr_bands
@@ -58,17 +58,30 @@ def preamble(page_lines=FORM_LINES_6LPI, left=4):
   return p
 
 
+BODY_INCHES = BODY_COLS / 10.0        # 76 colunas a 10 cpi
+COND_COLS = int(BODY_INCHES * 17.1)   # a mesma largura medida em condensed
+
+
 def cabecalho(numero, url, data_ficcional="2047"):
+  """Cabecalho alinhado pela mesma direita do corpo.
+
+  O QR encosta na margem direita do bloco de texto, e nao na margem esquerda da
+  folha. O deslocamento sai da largura do proprio codigo, entao vale para
+  qualquer versao sem numero magico.
+  """
   p = ep.CONDENSED_OFF + ESC + b"P"
   p += b"  " + ESC + b"w\x01" + ESC + b"W\x01" + cp(f"CAPITULO {numero}")
   p += ESC + b"w\x00" + ESC + b"W\x00" + b"\r\n\r\n"   # a segunda quebra abre o corpo do tipo duplo
   p += ep.CONDENSED_ON
   p += cp(f"  ARQUIVO TERRA VIVA . {data_ficcional}") + b"\r\n"
-  p += b"  " + b"\xc4" * 110 + b"\r\n"
+  p += b"  " + b"\xc4" * (COND_COLS - 2) + b"\r\n"
   m, ver = matrix(url)
-  p += qr_bands(m, 2, 1, True)                          # devolve 1/6 no fim
+  largura_dots = len(m) * 2
+  lead = max(0, int(BODY_INCHES * 120) - largura_dots)
+  p += qr_bands(m, 2, 1, True, lead_dots=lead)          # devolve 1/6 no fim
   p += ep.CONDENSED_ON
-  p += cp(f"  {url.replace('https://', '')} . procedencia da fonte no arquivo vivo") + b"\r\n\r\n"
+  legenda = f"{url.replace('https://', '')} . procedencia da fonte no arquivo vivo"
+  p += cp(legenda.rjust(COND_COLS)) + b"\r\n\r\n"
   return p, ver
 
 
@@ -91,12 +104,37 @@ def colofao(fonte, numero, dominio):
   return p + b"\x0c" + ESC + b"@"                       # unico form feed do capitulo
 
 
+def registrar(caminho, numero, url, a):
+  """Uma linha por folha impressa. E o unico elo entre o QR do papel e a fonte.
+
+  O destino do QR le este registro. Sem a linha, o codigo aponta para um 404.
+  """
+  linha = {
+    "numero": numero,
+    "qr": url,
+    "fonte_titulo": a.fonte,
+    "fonte_veiculo": a.fonte_veiculo or "",
+    "fonte_data": a.fonte_data or "",
+    "fonte_url": a.fonte_url or "",
+    "packet_id": a.packet_id or "",
+    "impresso_em": datetime.datetime.now().isoformat(timespec="seconds"),
+  }
+  os.makedirs(os.path.dirname(caminho), exist_ok=True)
+  with open(caminho, "a", encoding="utf-8") as fh:
+    fh.write(json.dumps(linha, ensure_ascii=False) + "\n")
+
+
 def main():
   ap = argparse.ArgumentParser()
   ap.add_argument("corpo_txt")
   ap.add_argument("--numero", required=True, help="4 digitos, ex. 0013")
   ap.add_argument("--qr")
-  ap.add_argument("--fonte", required=True)
+  ap.add_argument("--fonte", required=True, help="titulo da fonte real, vai no colofao")
+  ap.add_argument("--fonte-url", default="")
+  ap.add_argument("--fonte-veiculo", default="")
+  ap.add_argument("--fonte-data", default="")
+  ap.add_argument("--packet-id", default="")
+  ap.add_argument("--registro", default="", help="jsonl que o destino do QR le")
   ap.add_argument("--dominio", default="heretica.xyz")
   ap.add_argument("--data-ficcional", default="2047")
   ap.add_argument("--out", required=True)
@@ -110,6 +148,9 @@ def main():
   body, nlin = corpo(texto)
   p = preamble() + head + body + colofao(a.fonte, numero, a.dominio)
   open(a.out, "wb").write(p)
+
+  if a.registro:
+    registrar(a.registro, numero, url, a)
 
   linhas_cabecalho = 12
   formas = max(1, -(-(nlin + linhas_cabecalho) // FORM_LINES_6LPI))

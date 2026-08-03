@@ -31,7 +31,9 @@ def matrix(payload):
   return qr.get_matrix(), qr.version
 
 
-def qr_bands(m, mw, mh, double_pass):
+def qr_bands(m, mw, mh, double_pass, lead_dots=MARGIN_DOTS):
+  """lead_dots desloca o codigo na linha. Passe o calculo do chamador para
+  encostar o codigo na margem direita do bloco de texto."""
   n = len(m)
   width = n * mw
   rows = []
@@ -42,7 +44,7 @@ def qr_bands(m, mw, mh, double_pass):
     rows.append([0] * width)
   p = ep.ESC + b"3" + bytes([24])
   for b0 in range(0, len(rows), 8):
-    cols = bytearray(b"\x00" * MARGIN_DOTS)
+    cols = bytearray(b"\x00" * lead_dots)
     for c in range(width):
       byte = 0
       for k in range(8):
