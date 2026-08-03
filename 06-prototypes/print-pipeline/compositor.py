@@ -9,11 +9,14 @@ form feed acontece depois do colofao. A versao anterior isolava o cabecalho numa
 forma propria e desperdicava dois tercos de folha por capitulo.
 
   CAPITULO NNNN em tipo nativo, altura e largura duplas
-  linha de arquivo em condensed, filete
-  QR do chao da agulha, modulo 2x1, passe duplo
-  legenda de procedencia
+  bloco de procedencia a esquerda e QR a direita, na mesma altura
+  filete
   corpo em LQ pica 10cpi, 76 colunas, 6 lpi, correndo na mesma forma
-  colofao com fonte real, timestamp e dominio
+  colofao com o ato da impressao, sem repetir a fonte
+
+A fonte real aparece uma vez na folha, no cabecalho, ao lado do codigo que
+aponta para ela. O colofao registra so quando e onde a folha saiu. Antes a
+procedencia saia duas vezes, na legenda do codigo e no colofao.
 
 Numeracao de 4 digitos por decisao de projeto. A URL do QR fica com 27
 caracteres e trava o codigo na versao 3 ate o capitulo 9999. Com 3 digitos o
@@ -62,26 +65,35 @@ BODY_INCHES = BODY_COLS / 10.0        # 76 colunas a 10 cpi
 COND_COLS = int(BODY_INCHES * 17.1)   # a mesma largura medida em condensed
 
 
-def cabecalho(numero, url, data_ficcional="2047"):
-  """Cabecalho alinhado pela mesma direita do corpo.
+def cabecalho(numero, url, fonte, veiculo, data_fonte, data_ficcional="2047"):
+  """Cabecalho de um bloco so. A procedencia corre a esquerda do codigo.
 
-  O QR encosta na margem direita do bloco de texto, e nao na margem esquerda da
-  folha. O deslocamento sai da largura do proprio codigo, entao vale para
-  qualquer versao sem numero magico.
+  O QR encosta na margem direita do bloco de texto, cravado por ESC $, e as
+  linhas de procedencia ocupam a mesma altura, a esquerda. A fonte real aparece
+  uma vez na folha, aqui. O colofao nao repete.
   """
   p = ep.CONDENSED_OFF + ESC + b"P"
   p += b"  " + ESC + b"w\x01" + ESC + b"W\x01" + cp(f"CAPITULO {numero}")
   p += ESC + b"w\x00" + ESC + b"W\x00" + b"\r\n\r\n"   # a segunda quebra abre o corpo do tipo duplo
-  p += ep.CONDENSED_ON
-  p += cp(f"  ARQUIVO TERRA VIVA . {data_ficcional}") + b"\r\n"
-  p += b"  " + b"\xc4" * (COND_COLS - 2) + b"\r\n"
+
   m, ver = matrix(url)
-  largura_dots = len(m) * 2
-  lead = max(0, int(BODY_INCHES * 120) - largura_dots)
-  p += qr_bands(m, 2, 1, True, lead_dots=lead)          # devolve 1/6 no fim
+  largura_qr = len(m) * 2 / 120.0                       # polegadas
+  pos_qr = int(round((BODY_INCHES - largura_qr) * 60))  # ESC $ conta em 1/60
+  texto_cols = int((BODY_INCHES - largura_qr - 0.12) * 17.1)
+
+  esquerda = [f"  ARQUIVO TERRA VIVA . {data_ficcional}", ""]
+  esquerda += ["  " + l for l in textwrap.wrap(f"fonte real. {fonte}", texto_cols - 2)]
+  rodape_fonte = " . ".join(x for x in (veiculo, data_fonte) if x)
+  if rodape_fonte:
+    esquerda.append("  " + rodape_fonte[:texto_cols - 2])
+  bandas = -(-len(m) // 8) + 1
+  esquerda = (esquerda + [""] * bandas)[:bandas]
+
   p += ep.CONDENSED_ON
-  legenda = f"{url.replace('https://', '')} . procedencia da fonte no arquivo vivo"
-  p += cp(legenda.rjust(COND_COLS)) + b"\r\n\r\n"
+  prefixos = [cp(l.ljust(texto_cols)) for l in esquerda]
+  p += qr_bands(m, 2, 1, True, prefix_lines=prefixos, abs_pos_units=pos_qr)
+  p += ep.CONDENSED_ON
+  p += b"  " + b"\xc4" * (COND_COLS - 2) + b"\r\n\r\n"
   return p, ver
 
 
@@ -95,11 +107,11 @@ def corpo(texto):
   return p + b"\r\n".join(cp(l) for l in linhas) + b"\r\n", len(linhas)
 
 
-def colofao(fonte, numero, dominio):
+def colofao(numero, dominio):
+  """So o ato da impressao. A procedencia ja esta no cabecalho e no codigo."""
   ts = datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
   p = ep.CONDENSED_ON
-  p += b"\xc4" * 110 + b"\r\n"
-  p += cp(f"fonte real. {fonte[:105]}") + b"\r\n"
+  p += b"\xc4" * (COND_COLS - 2) + b"\r\n"
   p += cp(f"impresso pela maquina do arquivo em {ts} . capitulo {numero} . {dominio}") + b"\r\n"
   return p + b"\x0c" + ESC + b"@"                       # unico form feed do capitulo
 
@@ -129,7 +141,7 @@ def main():
   ap.add_argument("corpo_txt")
   ap.add_argument("--numero", required=True, help="4 digitos, ex. 0013")
   ap.add_argument("--qr")
-  ap.add_argument("--fonte", required=True, help="titulo da fonte real, vai no colofao")
+  ap.add_argument("--fonte", required=True, help="titulo da fonte real, vai no cabecalho")
   ap.add_argument("--fonte-url", default="")
   ap.add_argument("--fonte-veiculo", default="")
   ap.add_argument("--fonte-data", default="")
@@ -144,9 +156,9 @@ def main():
   url = a.qr or f"https://{a.dominio}/f/{numero}"
   texto = open(a.corpo_txt, encoding="utf-8").read()
 
-  head, ver = cabecalho(numero, url, a.data_ficcional)
+  head, ver = cabecalho(numero, url, a.fonte, a.fonte_veiculo, a.fonte_data, a.data_ficcional)
   body, nlin = corpo(texto)
-  p = preamble() + head + body + colofao(a.fonte, numero, a.dominio)
+  p = preamble() + head + body + colofao(numero, a.dominio)
   open(a.out, "wb").write(p)
 
   if a.registro:

@@ -31,9 +31,18 @@ def matrix(payload):
   return qr.get_matrix(), qr.version
 
 
-def qr_bands(m, mw, mh, double_pass, lead_dots=MARGIN_DOTS):
-  """lead_dots desloca o codigo na linha. Passe o calculo do chamador para
-  encostar o codigo na margem direita do bloco de texto."""
+def qr_bands(m, mw, mh, double_pass, lead_dots=MARGIN_DOTS, prefix_lines=None, abs_pos_units=None):
+  """Bandas do codigo, com texto opcional na mesma linha.
+
+  lead_dots enche a linha com dots vazios antes do codigo. abs_pos_units usa
+  ESC $ para cravar a posicao horizontal em 1/60 de polegada a partir da margem
+  esquerda, que e o caminho exato quando ha texto antes do codigo na linha.
+
+  prefix_lines e uma lista de bytes ja codificados, um por banda, impressos
+  antes do codigo. O texto sai uma vez, o codigo sai duas quando o passe duplo
+  esta ligado. Bandas alimentam 24/216 de polegada, entao o texto ao lado do
+  codigo fica com entrelinha apertada, e e assim que ele deve parecer.
+  """
   n = len(m)
   width = n * mw
   rows = []
@@ -42,9 +51,11 @@ def qr_bands(m, mw, mh, double_pass, lead_dots=MARGIN_DOTS):
       rows.append([1 if m[r][c] else 0 for c in range(n) for _ in range(mw)])
   while len(rows) % 8:
     rows.append([0] * width)
+  pos = b"" if abs_pos_units is None else ep.ESC + b"$" + bytes([abs_pos_units % 256, abs_pos_units // 256])
+  enche = 0 if abs_pos_units is not None else lead_dots
   p = ep.ESC + b"3" + bytes([24])
-  for b0 in range(0, len(rows), 8):
-    cols = bytearray(b"\x00" * lead_dots)
+  for i, b0 in enumerate(range(0, len(rows), 8)):
+    cols = bytearray(b"\x00" * enche)
     for c in range(width):
       byte = 0
       for k in range(8):
@@ -53,7 +64,9 @@ def qr_bands(m, mw, mh, double_pass, lead_dots=MARGIN_DOTS):
       cols.append(byte)
     t = len(cols)
     band = ep.ESC + b"L" + bytes([t % 256, t // 256]) + bytes(cols)
-    p += (band + b"\r" + band + b"\r\n") if double_pass else (band + b"\r\n")
+    prefixo = prefix_lines[i] if prefix_lines and i < len(prefix_lines) else b""
+    linha = prefixo + pos + band
+    p += (linha + b"\r" + pos + band + b"\r\n") if double_pass else (linha + b"\r\n")
   p += ep.ESC + b"2"
   return p
 
