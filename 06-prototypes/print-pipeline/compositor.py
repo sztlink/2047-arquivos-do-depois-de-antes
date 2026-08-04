@@ -129,6 +129,7 @@ def registrar(caminho, numero, url, a):
     "fonte_data": a.fonte_data or "",
     "fonte_url": a.fonte_url or "",
     "packet_id": a.packet_id or "",
+    "texto": a.texto or "",
     "impresso_em": datetime.datetime.now().isoformat(timespec="seconds"),
   }
   os.makedirs(os.path.dirname(caminho), exist_ok=True)
@@ -146,6 +147,7 @@ def main():
   ap.add_argument("--fonte-veiculo", default="")
   ap.add_argument("--fonte-data", default="")
   ap.add_argument("--packet-id", default="")
+  ap.add_argument("--texto", default="", help="nome do arquivo com o texto impresso, servido junto da procedencia")
   ap.add_argument("--registro", default="", help="jsonl que o destino do QR le")
   ap.add_argument("--dominio", default="heretica.xyz")
   ap.add_argument("--data-ficcional", default="2047")
