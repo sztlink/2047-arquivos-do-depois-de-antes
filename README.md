@@ -14,7 +14,7 @@ Not an official institutional repository.
 Not an exhibition announcement.  
 Not a production dossier.
 
-Current milestone (August 2026, v0.3.0): the novel's voice is carried by a trained adapter, and the apparatus runs on a dedicated host the work controls. See `03-field-notes/2026-08-voice-trained-and-deployed.md`.
+Current milestone (August 2026, v0.4.0): the novel restarted from chapter 1 inside a daily coauthorial calibration loop, and the rehearsal chapters were reclassified as process material. See `03-field-notes/2026-08-restart-and-coauthorial-calibration.md`.
 
 Live portal (the machine's public surfaces, in production since July 2026):
 

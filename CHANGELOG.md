@@ -4,6 +4,15 @@ All notable public changes to this research archive will be documented here.
 
 This repository follows semantic-ish research archive versions: `vMAJOR.MINOR.PATCH`, where minor versions may mark new public research blocks rather than software features.
 
+## [v0.4.0] - 2026-08-06
+
+The novel restarts from chapter 1 inside a daily coauthorial calibration loop.
+
+### Added
+
+- Field note:
+  - `03-field-notes/2026-08-restart-and-coauthorial-calibration.md` (the coauthor's close reading distilled into engine rules, the sharpened world premise, the daily ten-chapter loop with blind-mixed engines, rehearsal material reclassified)
+
 ## [v0.3.0] - 2026-08-02
 
 The voice is trained and the machine runs on its own host.
