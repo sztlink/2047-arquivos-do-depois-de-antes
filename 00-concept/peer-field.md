@@ -223,7 +223,7 @@ This repository does not document the private co-authorial process. It only maps
 
 ### World of Matter
 
-**Reference:** [World of Matter project site](http://worldofmatter.net/about-project)
+**Reference:** [World of Matter project site](https://worldofmatter.net/about-project)
 
 **Relation:** resources, extraction, infrastructure, political ecology, visual research.
 

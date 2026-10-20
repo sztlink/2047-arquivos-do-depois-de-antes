@@ -1,5 +1,7 @@
 # Voice construction: an empirical, iterative method
 
+> **Historical note (October 2026).** Written during the research and rehearsal phase of the work, then called *Projeto 2047 / Arquivo Terra Viva*, and kept as process. Some of it no longer describes the work as it runs. For the current apparatus see `../03-field-notes/2026-09-restart-from-zero-and-the-2047-structure.md` and `../03-field-notes/2026-10-opening-at-casa-firjan.md`.
+
 **Status:** method validated; voice settled in co-authorial reading (July 2026).
 
 The novel is written in a voice built from the co-author's own prose, with her explicit consent. Early on we rejected the abstract route (a "cartography of the voice" defined on paper) in favor of an empirical loop: generate, read together, lapidate, settle.
@@ -17,12 +19,6 @@ The novel is written in a voice built from the co-author's own prose, with her e
 
 The memory-inverted voice won: the novel is narrated from later inside 2047, the present told as remembrance.
 
-Punctuation emerged as the sharpest calibration dial. Current contract, given by the co-author as written substitution recipes anchored on the page:
-
-- No colons. Her recipe: replace the colon with a period and open the next sentence with a capital letter. This holds even for the short paradox form; its energy is carried by two dry sentences instead.
-- No semicolons. Her recipe converts them to commas, preserving the long-breath chaining of the sentence rather than cutting it.
-- No em dashes, no dialogue dashes. Speech is folded into the narration and punctuated with commas and periods.
-
-An instructive detail of the process: after her first pass we inferred a subtler rule (the paradox colon survives) from what she had left untouched. Her second pass marked exactly that character with the general recipe. Lesson twice over: harvest the author's marks, and do not crystallize a fine rule while the author is still mid-pass.
+The settled contract is a short list of small enforceable behaviors, punctuation first among them, that the coauthor marked on the page and gave as written recipes. Those rules are part of the coauthor's authorship. They govern every chapter and are not published in this archive.
 
 The larger lesson stands: a synthetic voice is not settled by adjectives ("literary", "essayistic") but by small enforceable behaviors that a human author actually marked on the page.

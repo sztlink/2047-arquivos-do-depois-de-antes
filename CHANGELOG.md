@@ -4,6 +4,38 @@ All notable public changes to this research archive will be documented here.
 
 This repository follows semantic-ish research archive versions: `vMAJOR.MINOR.PATCH`, where minor versions may mark new public research blocks rather than software features.
 
+## [v0.5.0] - 2026-10-20
+
+The work opened. **2047: Arquivos do depois de antes** is on view at Casa Firjan, Rio de Janeiro, from October 15 to November 16, 2026, and online at <https://heretica.xyz>.
+
+### Changed
+
+- The repository is renamed from `2047-terra-viva-archive` to `2047-arquivos-do-depois-de-antes`. The old address redirects. The GitHub Pages address of the command center prototype changed with it.
+- README, START-HERE, NOTICE, EPICS, and CITATION rewritten for the current title, the exhibition, and the live site. *Projeto 2047 / Arquivo Terra Viva* is recorded as the working title until August 2026.
+- Research-phase files in `00-concept/`, `01-apparatus/`, `02-generative-system/`, and `06-prototypes/` carry a historical banner pointing to the current notes. Their content is kept as process.
+- Diagrams name the Epson LQ-590 and the split between cloud writing and local triage and video.
+- MANIFEST regenerated for every tracked file.
+
+### Added
+
+- Field notes:
+  - `03-field-notes/2026-09-title-and-narrator.md` (from working title to title, and Herética Ablation)
+  - `03-field-notes/2026-09-restart-from-zero-and-the-2047-structure.md` (restart from zero on August 22, the writing moves to a cloud model, 89 notebooks of 23, four vertices, the base of the season)
+  - `03-field-notes/2026-10-lq-590-qr-and-declared-cost.md` (the 24-pin printer, the designed page, the QR per page, the declared cost and its first averages)
+  - `03-field-notes/2026-10-video-wall.md` (two scenes per chapter, the local video engine, the wall program, the second screen)
+  - `03-field-notes/2026-10-opening-at-casa-firjan.md` (the opening, the room, the machines by role, the site, first figures)
+
+### Removed from the public text
+
+- The coauthor's punctuation recipes in `02-generative-system/voice-construction-method.md`. The voice rules belong to her authorship.
+- Internal hardening and compute details in `03-field-notes/2026-08-voice-trained-and-deployed.md`, as the v0.3.0 boundary already promised.
+- The internal routine of the August calibration loop in `03-field-notes/2026-08-restart-and-coauthorial-calibration.md`.
+- A reference to the content of institutional material in `02-generative-system/model-voice-and-training.md`.
+
+### Recorded late
+
+These were published on August 2 and 3, 2026 without a changelog entry: `01-apparatus/escp-print-presets.md`, `01-apparatus/qr-at-the-needle-limit.md`, `03-field-notes/2026-08-image-and-print-engine.md`, and `06-prototypes/print-pipeline/`. The tag `v0.4.0` was added to the commit of August 6, 2026.
+
 ## [v0.4.0] - 2026-08-06
 
 The novel restarts from chapter 1 inside a daily coauthorial calibration loop.

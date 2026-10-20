@@ -30,13 +30,13 @@
   <g transform="translate(120 220)">
     <rect class="box" x="0" y="0" width="300" height="120" rx="18" />
     <text class="ink label" x="30" y="48">Remote API</text>
-    <text class="muted small" x="30" y="82">possible text / image</text>
+    <text class="muted small" x="30" y="82">cloud writing model</text>
   </g>
 
   <g transform="translate(120 400)">
     <rect class="box" x="0" y="0" width="300" height="120" rx="18" />
     <text class="ink label" x="30" y="48">Local model</text>
-    <text class="muted small" x="30" y="82">possible future mode</text>
+    <text class="muted small" x="30" y="82">news triage and video</text>
   </g>
 
   <g transform="translate(530 310)">
@@ -75,5 +75,5 @@
   <path class="dash" d="M 1050 445 L 1050 620" />
   <path class="dash" d="M 1385 445 C 1385 540 1260 575 1150 620" />
 
-  <text x="80" y="820" class="muted tiny">Cloud, hybrid, or local computation remains a technical decision. The material accountability remains in every mode.</text>
+  <text x="80" y="820" class="muted tiny">Writing in the cloud, news triage and video at home. The cost of every mode is declared on the page.</text>
 </svg>

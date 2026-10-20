@@ -1,5 +1,7 @@
 # Runtime requirements
 
+> **Historical note (October 2026).** Written during the research and rehearsal phase of the work, then called *Projeto 2047 / Arquivo Terra Viva*, and kept as process. Some of it no longer describes the work as it runs. For the current apparatus see `../03-field-notes/2026-10-lq-590-qr-and-declared-cost.md`, `../03-field-notes/2026-10-video-wall.md`, and `../03-field-notes/2026-10-opening-at-casa-firjan.md`.
+
 This file defines public technical requirements for the physical runtime of **Projeto 2047 / Arquivo Terra Viva**.
 
 It does not specify final exhibition logistics, final hardware, budget, suppliers, institutional constraints, or private infrastructure.

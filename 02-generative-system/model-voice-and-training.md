@@ -1,5 +1,7 @@
 # Model voice and training path
 
+> **Historical note (October 2026).** Written during the research and rehearsal phase of the work, then called *Projeto 2047 / Arquivo Terra Viva*, and kept as process. Some of it no longer describes the work as it runs. For the current apparatus see `../03-field-notes/2026-09-restart-from-zero-and-the-2047-structure.md` and `../03-field-notes/2026-10-opening-at-casa-firjan.md`.
+
 This file records a possible model strategy for a long-duration writing machine.
 
 It is not a final training plan and not a rights clearance document.
@@ -10,7 +12,7 @@ The writing engine should not behave like a generic art-and-technology assistant
 
 If the work becomes a continuous book-writing apparatus across the exhibition period, the model should learn from a carefully cleared corpus connected to the authors' public writing, vocabulary, and conceptual fields.
 
-The exact duration is not fixed in this file. The institutional material reviewed so far asks for confirmation of the exhibition period and daily operating hours, but does not establish a 100-day duration.
+The exact duration is not fixed in this file.
 
 ```txt
 not a generic art-tech model

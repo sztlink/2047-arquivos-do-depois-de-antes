@@ -1,5 +1,7 @@
 # Field note, August 2026. Image and print engine
 
+> **Historical note (October 2026).** Written during the research and rehearsal phase of the work, then called *Projeto 2047 / Arquivo Terra Viva*, and kept as process. Some of it no longer describes the work as it runs. For the current apparatus see `./2026-10-lq-590-qr-and-declared-cost.md`, `./2026-10-video-wall.md`, and `./2026-10-opening-at-casa-firjan.md`.
+
 This note records the week the visual side of **Projeto 2047 / Arquivo Terra Viva** became sovereign, and the week the printer became an organ of the machine.
 
 It is public research documentation. It does not expose private infrastructure, credentials, hostnames, IPs, or deployment details.

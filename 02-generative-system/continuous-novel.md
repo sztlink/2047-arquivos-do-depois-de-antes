@@ -1,5 +1,7 @@
 # From fragments to a continuous novel
 
+> **Historical note (October 2026).** Written during the research and rehearsal phase of the work, then called *Projeto 2047 / Arquivo Terra Viva*, and kept as process. Some of it no longer describes the work as it runs. For the current apparatus see `../03-field-notes/2026-09-restart-from-zero-and-the-2047-structure.md` and `../03-field-notes/2026-10-opening-at-casa-firjan.md`.
+
 **Status:** settled decision (July 2026).  
 **Supersedes:** the story-packet as the dramaturgical unit. The packet survives as a transport and ledger unit; it no longer defines what the machine writes.
 

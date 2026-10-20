@@ -6,7 +6,7 @@ The July note left two threads open: the voice was still settling, and the machi
 
 `../02-generative-system/fine-tuning-vs-rag.md` had prescribed a path. Before training anything, run a comparison. Build an evaluation set, build a small cleared corpus, weigh base-plus-prompt against a lightweight adapter, and decide whether training is a demonstrated need rather than an assumption. That comparison was run.
 
-Four candidate corpora were generated, each a hundred chapters written to the same voice contract by a different large model. They were read against each other on craft: fidelity to the source news, discipline of the punctuation contract, refusal of spectacle, whether the material consequence stayed material instead of becoming atmosphere. A proxy reader, an agent built to stand in for the co-author's critical eye, ranked them and named the failure mode of each: one model's mannerism, another's tendency to let a character drift out of the world. The comparison produced a clear ordering and, more useful, a map of what each model did well enough to keep.
+Four candidate corpora were generated, each a hundred chapters written to the same voice contract by a different large model. They were read against each other on craft: fidelity to the source news, discipline of the punctuation contract, refusal of spectacle, whether the material consequence stayed material instead of becoming atmosphere. A reading pass ranked them and named the failure mode of each: one model's mannerism, another's tendency to let a character drift out of the world. The comparison produced a clear ordering and, more useful, a map of what each model did well enough to keep.
 
 ## The adapter
 
@@ -14,7 +14,7 @@ The decision the architecture reserved for a demonstrated need was made. A light
 
 The training corpus is a hybrid, and honesty about its composition matters for a project that argues about extraction and consent. It combines the seven co-authored seed chapters, the gold written with the co-author, with a curated selection of the machine's own candidate chapters: synthetic material generated under the voice contract and then filtered, the weak and off-canon chapters dropped, a small traceable slice kept for the way it held the real news on the page. The dominant signal is curated synthetic text, anchored by human seeds and human curation. This sits in tension with the published corpus policy, which reserves training for cleared authored material and keeps raw model output out. Reconciling the two, whether by naming a formal category for curated synthetic fiction or by holding the adapter as a private research artifact, is a co-authorial decision, not a technical one, and it stays open. See `../02-generative-system/corpus-policy.md`.
 
-The adapter was trained off-site on rented compute in about twenty minutes, then pulled back and backed up before the rented disk was released. The weights stay private.
+The adapter was trained and backed up. The weights stay private.
 
 ## The voice held
 
@@ -28,7 +28,7 @@ The full apparatus ran end to end on this host. A real news item about data cent
 
 ## Resilience is earned, not assumed
 
-The move was not clean. During an earlier test the host's accelerator fell off the bus under an unusual load, and recovery required a physical power cycle. For a work meant to run unattended for weeks, a failure that needs a human hand is a real threat, so it produced a hardening study rather than only a fix: a guardian layer that can watch the machine, consume its output, and power-cycle it from outside if it hangs. The apparatus is learning to survive its own duration. This extends the recovery and supervision notes already in the archive. See `../01-apparatus/controller-recovery.md` and `../01-apparatus/process-supervision.md`.
+The move was not clean. During an earlier test the host failed in a way that only a human hand could recover. For a work meant to run unattended for weeks, a failure that needs a human hand is a real threat, so it produced a hardening study rather than only a fix: a guardian layer that watches the machine and can bring it back without a visit. The apparatus is learning to survive its own duration. This extends the recovery and supervision notes already in the archive. See `../01-apparatus/controller-recovery.md` and `../01-apparatus/process-supervision.md`.
 
 ## Leaner than the first sketch
 

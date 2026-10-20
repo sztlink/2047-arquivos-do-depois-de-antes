@@ -1,402 +1,75 @@
 # Epics
 
-This roadmap organizes the public research archive for **Projeto 2047 / Arquivo Terra Viva**.
+This roadmap organizes the public research archive for **2047: Arquivos do depois de antes**.
 
-The project is no longer only an apparatus that prints AI output. It is a long-duration writing machine: a system that reads present signals, writes a continuous novel set in 2047 in chapters, calibrates their sonic cadence through szt.link, performs them through a dot-matrix printer, and accumulates paper as a living archive.
+The work is a long-duration writing machine. It reads news of the present, writes a novel set in 2047 in chapters narrated by Herética Ablation, prints each chapter on a dot-matrix printer with a QR code and a declared cost, plays two video scenes per chapter on a wall, and accumulates paper as a living archive. Since October 15, 2026 it runs in public at Casa Firjan, Rio de Janeiro, until November 16, 2026.
 
-This file is a public roadmap. It does not expose private production material, institutional documents, budgets, or closed co-authorial process.
+This file is a public roadmap. It does not expose private production material, institutional documents, budgets, or closed coauthorial process.
 
 ## Current target
 
-Move the repository from **v0.2.0 (portal live, voice settled)** toward **v0.3.0: generative loop and controller proof**.
+**v0.5.0, the work opened (October 2026). Done.** Title, status, apparatus, and diagrams brought up to date. Five field notes cover August to October. Research-phase files carry a historical banner.
 
-The next public milestone should demonstrate the logic of:
-
-```txt
-source -> chapter -> sonic score -> print simulation -> ledger record
-```
-
-before depending on the physical FX-2190.
+**Next, v0.6.0, the record of the season (after November 16, 2026).** What the room produced: chapters printed, paper accumulated, energy declared, failures and recoveries, what the machine did alone.
 
 ---
 
-## Epic 0 - Orientation and canon
+## Epic 0. Orientation and canon
 
-**Status:** largely done.
+**Status.** Done for v0.5.0.
 
-**Goal**  
-Create a fast entry point for visitors, curators, researchers, and future collaborators.
+`README.md`, `START-HERE.md`, the short thesis, the public and private boundary, and a reading path in the order things happened.
 
-**Current outputs**
+**Remaining.** An optional glossary (vertex, notebook, declared cost, normais, janelas).
 
-- `README.md`
-- `START-HERE.md`
-- Short thesis
-- Public/private boundary
-- Reading path
+## Epic 1. Dot-matrix printer as archive apparatus
 
-**Remaining outputs**
+**Status.** Realized. An Epson LQ-590 prints the work since October 4, 2026, with the FX-2190 of the rehearsals as reserve. See `03-field-notes/2026-10-lq-590-qr-and-declared-cost.md`, `01-apparatus/escp-print-presets.md`, `01-apparatus/qr-at-the-needle-limit.md`, and the historical research in `01-apparatus/printer-research/`.
 
-- Optional glossary of key terms.
-- Optional v0.2 status block.
+**Remaining.** A public scan of a printed page, chosen by the artists. A sound note of the needle in the room.
 
-**Felipe input needed**
+## Epic 2. Peer field and related practices
 
-- What should a stranger understand in the first 3 minutes?
-- Which phrase should lead as the project evolves?
-- When should the repo stop saying preliminary and start saying active research archive?
+**Status.** Done for v0.1.0, expandable. See `00-concept/peer-field.md`.
 
-**Definition of done**
+## Epic 3. Diagrams and visual grammar
 
-A new reader can understand what the repo is, what it is not, and where to start without reading every file.
+**Status.** Updated for v0.5.0. The three diagrams in `05-diagrams/` name the LQ-590 and the split between cloud writing and local triage and video.
 
----
+**Remaining.** A diagram of the video wall loop (needle cadence to image modulation and caption), a diagram of the declared cost of one page, and a room layout only after public clearance.
 
-## Epic 1 - Dot-matrix printer as archive apparatus
+## Epic 4. Generative dramaturgy
 
-**Status:** started.
+**Status.** Realized as one continuous novel of 2047 chapters, 89 notebooks of 23, anchored in four vertices of the chain. See `03-field-notes/2026-09-restart-from-zero-and-the-2047-structure.md`. The early short-story format and the sonic score notes in `02-generative-system/` are historical.
 
-**Goal**  
-Document the printer as the material heart of the work, not as nostalgic scenography.
+## Epic 5. Model voice and corpus
 
-**Current outputs**
+**Status.** Resolved in a different direction than first drawn. A local voice adapter was trained in August and left the production line on September 5, when the writing moved to a cloud model. The notes on corpus, training, and the comparison stay as process. The voice contract settled with the coauthor governs every chapter and is not published, because it belongs to her authorship.
 
-- `01-apparatus/dot-matrix-printer.md`
-- `01-apparatus/printer-research/README.md`
-- `01-apparatus/printer-research/dot-matrix-as-archive-apparatus.md`
-- `01-apparatus/printer-research/fx-2190-calibration-notes.md`
-- `01-apparatus/printer-research/cups-escp-pipeline.md`
-- `01-apparatus/printer-research/continuous-paper.md`
-- `01-apparatus/printer-research/encoding-and-typography.md`
-- `01-apparatus/printer-research/failure-modes.md`
+## Epic 6. Long-duration controller
 
-**Remaining outputs**
+**Status.** Realized. The exhibition machine prints, renders, plays the wall, keeps a diary of the season, watches itself, and restarts by itself after a power cut. See `03-field-notes/2026-10-opening-at-casa-firjan.md`. The controller, recovery, and supervision notes in `01-apparatus/` are the design that preceded it.
 
-- Physical width test receipt.
-- Accent proof receipt.
-- Photo / scan of first public proof.
-- Audio note or sonic observation from real printer output.
+**Remaining.** A public account of the failures of the season and how the machine came back from them, without infrastructure details.
 
-**Felipe input needed**
+## Epic 7. Hardware and e-waste body
 
-- Is the FX-2190 only the prototype or still a candidate final printer?
-- Should Portuguese accent failure be solved invisibly or preserved as material evidence?
-- How should paper accumulate in space?
-- Should the printer be called witness, percussion, archive machine, bureaucratic machine, or something else after physical tests?
+**Status.** Started conceptually. See `01-apparatus/hardware-ewaste-scenography.md`.
 
-**Definition of done**
+**Remaining.** What of the hardware body reached the room, documented after the season.
 
-The printer reads as a conceptual, sonic, and technical apparatus with enough specificity to support prototypes and future exhibition decisions.
+## Epic 8. Prototype receipts
+
+**Status.** The prototypes of May (`06-prototypes/command-center/`, `06-prototypes/story-packets/`) and the compositor of August (`06-prototypes/print-pipeline/`) are kept as receipts of the path. The live work replaced them. Its public receipt is the site, <https://heretica.xyz>.
+
+## Epic 9. Citation, release, and preservation
+
+**Status.** v0.5.0. `CITATION.cff`, `MANIFEST.md`, and `CHANGELOG.md` updated, tags for every release.
+
+**Remaining.** An optional DOI after the season. A preservation copy of the site and of the print log, as public as the work allows.
 
 ---
-
-## Epic 2 - Peer field and related practices
-
-**Status:** done for v0.1.0, expandable.
-
-**Goal**  
-Position the project near relevant artistic, technical, and theoretical fields without reducing it to influence lists.
-
-**Current outputs**
-
-- `00-concept/peer-field.md`
-- Initial verified links for key references.
-
-**Remaining outputs**
-
-- Expand Latin American and Brazilian references.
-- Add printer / teletype artworks.
-- Add rare earth and urban mining references.
-- Add generative literature and machine writing references.
-
-**Felipe input needed**
-
-- Which peers feel alive, not merely academically correct?
-- Which references are too close, too distant, or distracting?
-- Should this become a formal bibliography later?
-
-**Definition of done**
-
-A reader can locate the project among media art, AI criticism, archive studies, material computation, and extractive infrastructure without mistaking it for a derivative work.
-
----
-
-## Epic 3 - Diagrams and visual grammar
-
-**Status:** started.
-
-**Goal**  
-Give the repo visual clarity through public, redrawn diagrams.
-
-**Current outputs**
-
-- `05-diagrams/apparatus-flow.svg`
-- `05-diagrams/archive-layers.svg`
-- `05-diagrams/material-stack.svg`
-- `05-diagrams/README.md`
-
-**Remaining outputs**
-
-- Continue design research from `06-prototypes/command-center/DESIGN-DIRECTION.md`.
-- `05-diagrams/generative-loop.svg`
-- `05-diagrams/sonic-score.svg`
-- `05-diagrams/controller-runtime.svg`
-- `05-diagrams/printer-archive-flow.svg`
-- Optional future physical layout diagram only after public clearance.
-
-**Felipe input needed**
-
-- Should the next diagram be about score, controller, or generative loop?
-- Should diagrams remain warm editorial SVGs or become more schematic/technical?
-- Should the old server / e-waste body appear in diagrams before the hardware is chosen?
-
-**Definition of done**
-
-The repo has diagrams that can travel into a presentation, article, or future publication without exposing private material.
-
----
-
-## Epic 4 - Generative dramaturgy and sonic score
-
-**Status:** started.
-
-**Goal**  
-Define how the machine writes short stories without becoming an unconstrained chatbot, and how szt.link calibrates their sonic performance.
-
-**Current outputs**
-
-- `02-generative-system/pipeline.md`
-- `02-generative-system/source-curation-panel.md`
-- `02-generative-system/memory-and-state.md`
-- `02-generative-system/dramaturgical-constraints.md`
-- `02-generative-system/sonic-cadence-and-score.md`
-- `02-generative-system/source-ledger.md`
-- `02-generative-system/print-ledger-schema.md`
-- `02-generative-system/fallback-modes.md`
-- `02-generative-system/story-packet-schema.md`
-- `02-generative-system/score-vocabulary.md`
-
-**Remaining outputs**
-
-- Public receipts from future physical tests
-- `02-generative-system/refusal-policy.md`
-- `03-field-notes/YYYY-MM-generative-loop-smoke.md`
-
-**Felipe input needed**
-
-- What makes a 2047 story good enough to print?
-- How much literary beauty is allowed before the work becomes ornamental?
-- How dry or poetic should the machine be?
-- Should the score be visible in the printed output or only internal?
-- What is the role of silence: listening, refusal, mourning, suspense, or all of these?
-
-**Definition of done**
-
-The generative layer has a clear form: short story plus score plus ledger plus refusal. The printer is treated as performance, not output device only.
-
----
-
-## Epic 5 - Model voice and corpus
-
-**Status:** started.
-
-**Goal**  
-Define whether and how the project uses a situated model voice rather than a generic art-and-technology assistant.
-
-**Current outputs**
-
-- `02-generative-system/model-voice-and-training.md`
-- `02-generative-system/corpus-policy.md`
-- `02-generative-system/fine-tuning-vs-rag.md`
-- `02-generative-system/evaluation-prompts.md`
-
-**Remaining outputs**
-
-- `02-generative-system/rights-and-clearance.md`
-- Optional private corpus inventory, not for this public repo unless fully cleared.
-
-**Felipe input needed**
-
-- Which texts by Giselle are cleared for model training, if any?
-- Which texts by Felipe are cleared for model training?
-- Which szt.link material can be sanitized and used?
-- Should the model weights remain private?
-- Is the goal voice, reasoning pattern, output schema, cadence, or all of these?
-- What must not be imitated?
-
-**Definition of done**
-
-The repo distinguishes training, retrieval, corpus, rights, evaluation, and authorship. It does not treat LLM conversations as the primary training target.
-
----
-
-## Epic 6 - Long-duration local controller
-
-**Status:** started.
-
-**Goal**  
-Specify the physical runtime machine that stays with the printer across the exhibition period.
-
-The duration is **not confirmed** in the public archive. Do not assume 100 days or 6 months until institutional confirmation.
-
-**Current outputs**
-
-- `01-apparatus/local-controller.md`
-- `01-apparatus/runtime-requirements.md`
-- `01-apparatus/printer-connection.md`
-- `01-apparatus/controller-recovery.md`
-- `01-apparatus/process-supervision.md`
-- `01-apparatus/local-logs.md`
-- controller notes inside `01-apparatus/system-overview.md`
-
-**Remaining outputs**
-
-- Public runtime receipts from future tests
-
-**Felipe input needed**
-
-- Is the controller a mini PC, old enterprise server, recovered computer, or Raspberry Pi-class device?
-- Should the functioning controller be visible?
-- What is acceptable downtime during the exhibition?
-- What must happen if internet fails?
-- What must happen if the printer jams?
-- Who can physically restart or stop the machine?
-
-**Definition of done**
-
-The controller is specified as runtime infrastructure: replaceable, observable, recoverable, connected to printer, and capable of running the archive without exposing private infrastructure.
-
----
-
-## Epic 7 - Hardware and e-waste body
-
-**Status:** started conceptually, not yet specified.
-
-**Goal**  
-Specify the material body of the installation without turning e-waste into generic cyberpunk decoration.
-
-This epic is separate from the local controller. The controller is functional runtime infrastructure. The e-waste body is material argument, scenography, and evidence. They may overlap, but they are not the same layer.
-
-**Current outputs**
-
-- `01-apparatus/hardware-ewaste-scenography.md`
-- related notes in `01-apparatus/local-controller.md`
-
-**Remaining outputs**
-
-- `01-apparatus/hardware-body.md`
-- `01-apparatus/e-waste-sourcing-ethics.md`
-- `01-apparatus/living-and-dead-hardware.md`
-- Public checklist of possible components by category, without suppliers or negotiation details.
-
-**Felipe input needed**
-
-- Which dead components matter visually or historically?
-- Should provenance labels be part of the work?
-- How much should the work confess remote computation if cloud APIs are used?
-- Should the old server be alive, dead, or both through paired machines?
-
-**Definition of done**
-
-The hardware body is described as material argument, not decoration.
-
----
-
-## Epic 8 - Prototype receipts
-
-**Status:** started.
-
-**Goal**  
-Document tests as receipts: small, factual, reproducible fragments of the apparatus becoming material.
-
-**Current outputs**
-
-- `03-field-notes/2026-05-command-center-smoke.md`
-- `03-field-notes/2026-05-story-packet-smoke.md`
-- `assets/prototype-screenshots/command-center-v2-2026-05-17.png`
-- `06-prototypes/story-packets/`
-
-**Remaining outputs**
-
-- `03-field-notes/YYYY-MM-generative-loop-smoke.md`
-- `03-field-notes/YYYY-MM-terminal-print-simulation.md`
-- `03-field-notes/YYYY-MM-printer-smoke-test.md`
-- `03-field-notes/YYYY-MM-paper-archive-test.md`
-- Optional public media folder for sanitized photos, scans, audio notes.
-
-**Recommended first receipt**
-
-A no-printer generative loop smoke test:
-
-```txt
-source
-  -> short story
-  -> sonic score JSON
-  -> terminal print simulation
-  -> ledger record
-```
-
-**Felipe input needed**
-
-- Which first test matters most: terminal simulation, model output, score, ledger, or printer?
-- Can generated sample stories be public?
-- Should failed generated stories be preserved as evidence?
-- What minimum test would make the project feel real in the body?
-
-**Definition of done**
-
-The repository contains at least one public receipt with setup, input, output, score, failure or refusal, observation, and next action.
-
----
-
-## Epic 9 - Citation, release, and preservation layer
-
-**Status:** v0.1.0 done.
-
-**Goal**  
-Make the repo citable as a stable public research artifact.
-
-**Current outputs**
-
-- `CHANGELOG.md`
-- `CITATION.cff`
-- `MANIFEST.md`
-- Git tag `v0.1.0`
-- GitHub Release `v0.1.0`
-
-**Remaining outputs**
-
-- `v0.2.0` release after first generative-loop receipt or controller proof.
-- Optional Zenodo DOI later, only after review.
-- Expanded manifest for future media artifacts.
-
-**Felipe input needed**
-
-- What deserves v0.2.0: generative-loop smoke, model/corpus policy, controller spec, or printer receipt?
-- When should this become DOI-citable?
-- Should release notes stay technical or become more essayistic?
-
-**Definition of done**
-
-The archive has stable versions that can be referenced in academic, curatorial, or public contexts.
-
----
-
-## Suggested working order from here
-
-1. Epic 8 - no-printer generative-loop smoke test.
-2. Epic 4 - story packet schema and score vocabulary.
-3. Epic 6 - controller runtime requirements.
-4. Epic 5 - corpus policy and fine-tuning versus RAG.
-5. Epic 7 - hardware and e-waste body.
-6. Epic 1 - physical FX-2190 receipt.
-7. Epic 9 - v0.2.0 release.
 
 ## Rule for all epics
 
-Do not publish private process.  
-Do not publish institutional material.  
-Do not assume exhibition duration before confirmation.  
-Do not freeze the artwork prematurely.  
-Make the apparatus legible.  
-Let caveats travel with the artifacts.
+Every public file must be useful to a stranger and safe to publish. When in doubt, keep it private and write a sanitized note instead.

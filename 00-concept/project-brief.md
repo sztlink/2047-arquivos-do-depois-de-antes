@@ -1,5 +1,7 @@
 # Project brief
 
+> **Historical note (October 2026).** Written during the research and rehearsal phase of the work, then called *Projeto 2047 / Arquivo Terra Viva*, and kept as process. Some of it no longer describes the work as it runs. For the current apparatus see `../03-field-notes/2026-10-lq-590-qr-and-declared-cost.md`, `../03-field-notes/2026-10-video-wall.md`, and `../03-field-notes/2026-10-opening-at-casa-firjan.md`.
+
 **Projeto 2047 / Arquivo Terra Viva** is an artwork in development around a speculative near future in which rare earth extraction, automated governance, environmental collapse, and computational infrastructures become inseparable.
 
 The work treats 2047 not as distant science fiction, but as a compressed image of the present. The future is already being mined through data, minerals, energy, water, e-waste, and automated decision systems.

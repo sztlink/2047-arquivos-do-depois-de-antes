@@ -1,23 +1,29 @@
 cff-version: 1.2.0
 message: "If you cite this public research archive, please cite it as below."
-title: "Projeto 2047 / Arquivo Terra Viva: Technical-Artistic Research Archive"
+title: "2047: Arquivos do depois de antes. Technical-Artistic Research Archive"
 type: dataset
 authors:
   - family-names: Beiguelman
     given-names: Giselle
   - family-names: Sztutman
     given-names: Felipe
-version: "0.1.0"
-date-released: "2026-05-17"
-url: "https://github.com/sztlink/2047-terra-viva-archive"
-repository-code: "https://github.com/sztlink/2047-terra-viva-archive"
+version: "0.5.0"
+date-released: "2026-10-20"
+url: "https://heretica.xyz"
+repository-code: "https://github.com/sztlink/2047-arquivos-do-depois-de-antes"
 abstract: >-
-  Public, sanitized technical-artistic research archive for Projeto 2047 /
-  Arquivo Terra Viva, an artwork in development by Giselle Beiguelman and
-  Felipe Sztutman. The archive documents apparatus research, dot-matrix
-  printing, generative system notes, e-waste / hardware body, public diagrams,
-  peer field mapping, and archive policy. It does not include private
-  conversations, institutional documents, budgets, or closed production material.
+  Public, sanitized technical-artistic research archive for 2047: Arquivos do
+  depois de antes, an artwork by Giselle Beiguelman and Felipe Sztutman, on
+  view at Casa Firjan, Rio de Janeiro, from October 15 to November 16, 2026.
+  A machine writes a novel set in 2047 from real news of the present, narrated
+  by the synthetic narrator Herética Ablation, and a dot-matrix printer types
+  each chapter with a QR code and a declared cost in tokens and watt-hours.
+  The archive documents apparatus research, dot-matrix printing, the video
+  wall, generative system notes, the hardware body, public diagrams, peer
+  field mapping, and archive policy. It does not include private
+  conversations, institutional documents, budgets, or closed production
+  material. The working title until August 2026 was Projeto 2047 / Arquivo
+  Terra Viva.
 keywords:
   - media art
   - artificial intelligence
@@ -27,3 +33,5 @@ keywords:
   - media archaeology
   - extractive computation
   - installation art
+  - generative literature
+  - energy accounting

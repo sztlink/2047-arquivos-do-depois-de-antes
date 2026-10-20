@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
-  <title id="title">Projeto 2047 apparatus flow</title>
+  <title id="title">2047: Arquivos do depois de antes, apparatus flow</title>
   <desc id="desc">Public diagram showing the flow from present signals through memory, generative engine, dot-matrix printer, continuous paper, and living archive.</desc>
   <defs>
     <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
@@ -23,7 +23,7 @@
   <rect class="bg" width="1600" height="900" />
   <rect x="48" y="48" width="1504" height="804" fill="none" stroke="#1f1a14" stroke-width="2" />
 
-  <text x="80" y="108" class="ink title">Projeto 2047 / Arquivo Terra Viva</text>
+  <text x="80" y="108" class="ink title">2047: Arquivos do depois de antes</text>
   <text x="80" y="143" class="muted small">Apparatus flow, public research diagram</text>
 
   <g transform="translate(90 230)">
@@ -59,8 +59,8 @@
     <rect class="box-soft" x="0" y="0" width="230" height="150" rx="18" />
     <text class="ink label" x="28" y="43">Dot-matrix</text>
     <text class="ink label" x="28" y="75">printer</text>
-    <text class="muted tiny" x="28" y="106">Epson FX-2190</text>
-    <text class="muted tiny" x="28" y="128">prototype</text>
+    <text class="muted tiny" x="28" y="106">Epson LQ-590</text>
+    <text class="muted tiny" x="28" y="128">24-pin, ESC/P2</text>
   </g>
 
   <path class="line" d="M 310 285 L 350 285" />

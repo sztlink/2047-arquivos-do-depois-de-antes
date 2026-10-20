@@ -26,11 +26,9 @@ The research corpus that feeds the machine caught up with the news. Datacenter c
 
 ## The calibration loop
 
-The rewrite is not a one-off. The novel is now written inside a daily coauthorial loop.
+The rewrite is not a one-off. The novel is now written inside a coauthorial loop, in which the coauthor's reading of each batch becomes writing directives for the next, and silence is recorded too. The internal routine of the loop stays outside this archive.
 
-Ten chapters are generated per day and delivered every morning to a single growing document. Two different engines write the batch, mixed blind, so the coauthor's reactions also become an instrument for choosing the final voice. Her comments on one day's chapters are read, converted into writing directives, and injected into the next day's batch before it is generated. Silence is also recorded. A batch that ships without new calibration says so.
-
-The loop is expected to run for about two weeks. Automation of the exhibition's writing only resumes if the machine's proficiency, after this schooling, is judged sufficient to carry the book.
+The loop ended in a deeper restart on August 22. See `2026-09-restart-from-zero-and-the-2047-structure.md`.
 
 ## What this changes in the archive
 

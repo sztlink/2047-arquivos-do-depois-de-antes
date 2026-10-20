@@ -1,5 +1,7 @@
 # Local logs
 
+> **Historical note (October 2026).** Written during the research and rehearsal phase of the work, then called *Projeto 2047 / Arquivo Terra Viva*, and kept as process. Some of it no longer describes the work as it runs. For the current apparatus see `../03-field-notes/2026-10-lq-590-qr-and-declared-cost.md`, `../03-field-notes/2026-10-video-wall.md`, and `../03-field-notes/2026-10-opening-at-casa-firjan.md`.
+
 This file defines the public logging model for the long-duration apparatus of **Projeto 2047 / Arquivo Terra Viva**.
 
 It does not expose real deployment paths, private infrastructure, or institutional logistics.

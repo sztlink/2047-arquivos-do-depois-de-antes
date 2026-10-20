@@ -1,5 +1,7 @@
 # Corpus policy
 
+> **Historical note (October 2026).** Written during the research and rehearsal phase of the work, then called *Projeto 2047 / Arquivo Terra Viva*, and kept as process. Some of it no longer describes the work as it runs. For the current apparatus see `../03-field-notes/2026-09-restart-from-zero-and-the-2047-structure.md` and `../03-field-notes/2026-10-opening-at-casa-firjan.md`.
+
 This file defines the public corpus policy for the writing apparatus of **Projeto 2047 / Arquivo Terra Viva**.
 
 It is a research policy, not a final rights clearance document. It does not authorize training on any specific text by Giselle Beiguelman, Felipe Sztutman, or any third party.
