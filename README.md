@@ -11,7 +11,7 @@ The repository focuses on Felipe Sztutman's technical-artistic process: the inst
 
 ## Status
 
-**On view.** The work opened on October 15, 2026 at Casa Firjan, Rio de Janeiro, and runs until November 16, 2026.
+**On view.** The work opened on October 15, 2026 at Casa Firjan, Rio de Janeiro, and runs until November 15, 2026.
 
 - The work online: <https://heretica.xyz> (chapters, videos, characters, sources, declared cost, credits, in Portuguese and English)
 - Current milestone (October 2026, v0.5.0): the work opened. See `03-field-notes/2026-10-opening-at-casa-firjan.md`.

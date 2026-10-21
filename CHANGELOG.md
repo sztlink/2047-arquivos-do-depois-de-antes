@@ -6,7 +6,7 @@ This repository follows semantic-ish research archive versions: `vMAJOR.MINOR.PA
 
 ## [v0.5.0] - 2026-10-20
 
-The work opened. **2047: Arquivos do depois de antes** is on view at Casa Firjan, Rio de Janeiro, from October 15 to November 16, 2026, and online at <https://heretica.xyz>.
+The work opened. **2047: Arquivos do depois de antes** is on view at Casa Firjan, Rio de Janeiro, from October 15 to November 15, 2026, and online at <https://heretica.xyz>.
 
 ### Changed
 

@@ -4,7 +4,7 @@ If you have five minutes, start here.
 
 ## What this is
 
-**2047: Arquivos do depois de antes** is an artwork by Giselle Beiguelman and Felipe Sztutman, on view at Casa Firjan, Rio de Janeiro, from October 15 to November 16, 2026. The work online is at <https://heretica.xyz>.
+**2047: Arquivos do depois de antes** is an artwork by Giselle Beiguelman and Felipe Sztutman, on view at Casa Firjan, Rio de Janeiro, from October 15 to November 15, 2026. The work online is at <https://heretica.xyz>.
 
 This repository is the public, sanitized research archive for Felipe Sztutman's technical-artistic layer of the process: apparatus, printer, video wall, generative system, hardware body, e-waste, and archive policy.
 

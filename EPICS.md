@@ -2,7 +2,7 @@
 
 This roadmap organizes the public research archive for **2047: Arquivos do depois de antes**.
 
-The work is a long-duration writing machine. It reads news of the present, writes a novel set in 2047 in chapters narrated by Herética Ablation, prints each chapter on a dot-matrix printer with a QR code and a declared cost, plays two video scenes per chapter on a wall, and accumulates paper as a living archive. Since October 15, 2026 it runs in public at Casa Firjan, Rio de Janeiro, until November 16, 2026.
+The work is a long-duration writing machine. It reads news of the present, writes a novel set in 2047 in chapters narrated by Herética Ablation, prints each chapter on a dot-matrix printer with a QR code and a declared cost, plays two video scenes per chapter on a wall, and accumulates paper as a living archive. Since October 15, 2026 it runs in public at Casa Firjan, Rio de Janeiro, until November 15, 2026.
 
 This file is a public roadmap. It does not expose private production material, institutional documents, budgets, or closed coauthorial process.
 
@@ -10,7 +10,7 @@ This file is a public roadmap. It does not expose private production material, i
 
 **v0.5.0, the work opened (October 2026). Done.** Title, status, apparatus, and diagrams brought up to date. Five field notes cover August to October. Research-phase files carry a historical banner.
 
-**Next, v0.6.0, the record of the season (after November 16, 2026).** What the room produced: chapters printed, paper accumulated, energy declared, failures and recoveries, what the machine did alone.
+**Next, v0.6.0, the record of the season (after November 15, 2026).** What the room produced: chapters printed, paper accumulated, energy declared, failures and recoveries, what the machine did alone.
 
 ---
 

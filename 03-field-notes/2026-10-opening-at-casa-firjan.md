@@ -4,7 +4,7 @@ Status. Field note, public and sanitized. Figures are from the work's own print 
 
 ## Opening
 
-**2047: Arquivos do depois de antes** opened on October 15, 2026 at Casa Firjan, in Rio de Janeiro. It is on view until November 16, 2026. The installation was mounted in the days before the opening, and photographs of the room are on the site, in the Instalação section of <https://heretica.xyz>.
+**2047: Arquivos do depois de antes** opened on October 15, 2026 at Casa Firjan, in Rio de Janeiro. It is on view until November 15, 2026. The installation was mounted in the days before the opening, and photographs of the room are on the site, in the Instalação section of <https://heretica.xyz>.
 
 At the turn of the season the exhibition machine began a clean book. Chapter 0001, *Os quatro pequis*, follows Ilva, the verifier of the valley's water. The pages printed during the rehearsals of August and September remain archived as process. They do not count as the work and are not on the site.
 
